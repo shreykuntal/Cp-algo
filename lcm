@@ -1,4 +1,4 @@
-int findlcm(vi &arr)
+int __lcm(vi &arr)
 {
     int n = arr.size();
     int ans = arr[0];
