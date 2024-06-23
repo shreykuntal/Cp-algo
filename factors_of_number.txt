@@ -2,7 +2,7 @@ vi pd(int n)
 { 
 	vi ans;
 	// Note that this loop runs till square root 
-	for (int i=1; i<=sqrt(n); i++) 
+	for (int i=1; i<=sqrtl(n); i++) 
 	{ 
 		if (n%i == 0) 
 		{ 
