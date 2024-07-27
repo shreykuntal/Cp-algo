@@ -9,6 +9,8 @@ set incsearch
 set number
 set relativenumber
 set cino+=L0
+filetype plugin on
+let mapleader=","
 map <C-S> :w <bar> !g++ code.cpp -o code && ./code<CR>
 map <C-P> :w <bar> !python3 code.py<CR>
 map <C-a> <esc>ggVG<CR>
