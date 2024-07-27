@@ -1,3 +1,4 @@
+install nerdcommenter using vim8+ packages
 set tabstop=4
 set shiftwidth=4
 set noexpandtab
