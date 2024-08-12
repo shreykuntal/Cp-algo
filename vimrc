@@ -8,7 +8,6 @@ set ruler
 set showcmd
 set incsearch
 set number
-set relativenumber
 set cino+=L0
 filetype plugin on
 let mapleader=","
