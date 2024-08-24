@@ -8,7 +8,7 @@ vector<int> pd(int n)
 			if (n/i == i) 
 				ans.push_back(i); 
  
-			else // Otherwise print both 
+			else
 				{ans.push_back(i); ans.push_back(n/i);} 
 		} 
 	} 
