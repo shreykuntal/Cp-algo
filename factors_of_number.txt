@@ -1,6 +1,6 @@
-vi pd(int n) 
+vector<int> pd(int n) 
 { 
-	vi ans;
+	vector<int> ans;
 	// Note that this loop runs till square root 
 	for (int i=1; i<=sqrtl(n); i++) 
 	{ 
@@ -8,10 +8,10 @@ vi pd(int n)
 		{ 
 			// If divisors are equal, print only one 
 			if (n/i == i) 
-				ans.pb(i); 
+				ans.push_back(i); 
  
 			else // Otherwise print both 
-				{ans.pb(i); ans.pb(n/i);} 
+				{ans.push_back(i); ans.push_back(n/i);} 
 		} 
 	} 
 	sort(ans.begin(), ans.end());
