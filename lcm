@@ -1,4 +1,4 @@
-int __lcm(vi arr)
+int __lcm(vector<int> arr)
 {
     int n = arr.size();
     int ans = arr[0];
