@@ -1,21 +1,21 @@
-    vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
-    {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
-        vector<int> dist(V, 1e9);
-        dist[S] = 0;
-        pq.push({0, S}); // distance, node
-        while (!pq.empty()){
-            int node = pq.top().second;
-            int distance = pq.top().first;
-            pq.pop();
-            for (auto &v : adj[node]){
-                int edge = v[0];
-                int weight = v[1];
-                if (dist[edge] > distance + weight){
-                    dist[edge] = distance + weight;
-                    pq.push({dist[edge], edge});
-                }
+vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
+{
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+    vector<int> dist(V, 1e9);
+    dist[S] = 0;
+    pq.push({0, S}); // distance, node
+    while (!pq.empty()){
+        int node = pq.top().second;
+        int distance = pq.top().first;
+        pq.pop();
+        for (auto &v : adj[node]){
+            int edge = v[0];
+            int weight = v[1];
+            if (dist[edge] > distance + weight){
+                dist[edge] = distance + weight;
+                pq.push({dist[edge], edge});
             }
         }
-        return dist;
     }
+    return dist;
+}
