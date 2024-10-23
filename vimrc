@@ -1,4 +1,5 @@
 install nerdcommenter using vim8+ packages
+install vim-gtk3
 :syntax on
 set tabstop=4
 set shiftwidth=4
