@@ -14,5 +14,6 @@ filetype plugin on
 let mapleader=","
 map <C-S> :w <bar> !clear && g++ -std=c++20 code.cpp -o code && ./code<CR>
 map <C-P> :w <bar> !clear && python3 code.py<CR>
-map <C-a> <esc>ggVG"+y<CR>
+map <C-a> <esc>ggVG<CR>
+map <C-w> "+y<CR>
 set belloff=all
